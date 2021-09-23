@@ -1,0 +1,137 @@
+.main-products {
+  &__container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    @include md {
+      padding-bottom: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 46px;
+  }
+
+  &__item {
+    margin: 0 18px;
+
+    @include xs {
+      margin: 0 10px;
+    }
+  }
+
+  &__btn-center {
+    text-align: center;
+  }
+
+  &__more {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 95px;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-gray);
+
+    span {
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    svg {
+      width: 12px;
+      height: 21px;
+      fill: var(--color-dark);
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      svg {
+        transform: translateY(5px);
+        transition: transform 0.3s;
+      }
+    }
+
+    @include md {
+      margin-top: 0;
+    }
+  }
+
+  &__btn {
+    font-size: 24px;
+
+    &--current {
+      &::before {
+        opacity: 1;
+        transition: opacity 0.15s;
+      }
+    }
+
+    @include sm {
+      font-size: 20px;
+    }
+  }
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: 1.8%;
+    margin-bottom: 80px;
+    width: 18.5%;
+
+    &:nth-last-child(-n+5) {
+      margin-bottom: 0;
+
+      @include md {
+        margin-bottom: 50px;
+      }
+
+      @include xs {
+        margin-bottom: 30px;
+      }
+    }
+
+    &:nth-child(5n) {
+      margin-right: 0;
+
+      @include md {
+        margin-right: 5%;
+      }
+
+      @include xs {
+        margin-right: 4%;
+      }
+    }
+
+    &:nth-child(3n) {
+      @include md {
+        margin-right: 0;
+      }
+
+      @include xs {
+        margin-right: 4%;
+      }
+    }
+
+    &:nth-child(2n) {
+      @include xs {
+        margin-right: 0;
+      }
+    }
+
+    @include md {
+      margin-right: 5%;
+      width: 30%;
+    }
+
+    @include xs {
+      margin-right: 4%;
+      width: 48%;
+    }
+  }
+}

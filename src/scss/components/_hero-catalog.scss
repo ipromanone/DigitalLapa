@@ -1,0 +1,162 @@
+.hero-catalog {
+  padding-top: 130px;
+
+  &__slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #f8f8f8;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  @include xs {
+    padding-top: 70px;
+  }
+}
+
+.catalog-slide {
+  padding: 108px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    max-width: 375px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 390px;
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--color-tundora);
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+
+    @include xs {
+      display: block;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 19%;
+    bottom: 0;
+
+    @include md {
+      right: 7%;
+      display: none;
+      width: 25%;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 16px 43px;
+    font-size: 13px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    &--dark {
+      border: 1px solid var(--color-dark);
+      color: var(--color-white);
+      background-color: var(--color-dark);
+      transition: all 0.3s;
+
+      &:hover {
+        border: 1px solid var(--color-dark);
+        color: var(--color-dark);
+        background-color: transparent;
+        transition: all 0.3s;
+      }
+    }
+
+    &--light {
+      border: 1px solid var(--color-dark);
+      color: var(--color-dark);
+      background-color: transparent;
+      transition: all 0.3s;
+
+      &:hover {
+        border: 1px solid var(--color-dark);
+        color: var(--color-white);
+        background-color: var(--color-dark);
+        transition: all 0.3s;
+      }
+
+      @include xs {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @include sm {
+    padding: 70px;
+  }
+
+  @include xs {
+    padding: 20px;
+  }
+}
+
+.hero-prev-btn,
+.hero-next-btn {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-dark);
+  width: 48px;
+  height: 48px;
+  color: var(--color-dark);
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+
+  svg {
+    width: 40px;
+    height: 20px;
+    fill: currentColor;
+    transition: fill 0.3s;
+  }
+
+  &:hover {
+    background-color: var(--color-dark);
+    transition: background-color 0.3s;
+
+    svg {
+      fill: var(--color-white);
+      transition: fill 0.3s;
+    }
+  }
+
+  @include sm {
+    left: 10px;
+  }
+
+  @include xs {
+    display: none;
+  }
+}
+
+.hero-next-btn {
+  left: auto;
+  right: 30px;
+
+  @include sm {
+    right: 10px;
+  }
+}

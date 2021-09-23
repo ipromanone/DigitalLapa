@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-anchor: none;
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.is-outer {
+  position: relative !important; // stylelint-disable-line declaration-no-important
+  left: -9999px !important; // stylelint-disable-line declaration-no-important
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.stop-scroll {
+  @include stop-scroll;
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.for-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.error {
+  border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @include xs {
+    padding: 0 15px;
+  }
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.main-link {
+  position: relative;
+  font-size: 15px;
+  color: var(--color-dark);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+      transition: opacity 0.15s;
+    }
+  }
+
+  &--white {
+    color: var(--color-white);
+  }
+}
+
+.container-narrow {
+  max-width: 1406px;
+}
+
+.to-top {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 14px 18px;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: rotate(360deg);
+    transition: transform 0.3s;
+  }
+}

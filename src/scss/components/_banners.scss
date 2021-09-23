@@ -1,0 +1,69 @@
+.banners {
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include xs {
+      padding-bottom: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @include md {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    flex-shrink: 0;
+    width: 33%;
+
+    &:not(:last-child) {
+      margin-right: 0.6%;
+    }
+
+    @include md {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
+
+.banners-article {
+  padding: 54px 60px;
+  padding-right: 45%;
+  min-height: 290px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e9e4df;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  &--midseason {
+    background-image: url("../img/midseason.jpg");
+  }
+
+  &--summer {
+    background-image: url("../img/summer.jpg");
+  }
+
+  &--accs {
+    background-image: url("../img/accs.jpg");
+  }
+
+  @include md {
+    padding: 50px 20px;
+  }
+
+  @include sm {
+    padding-right: 150px;
+  }
+}
