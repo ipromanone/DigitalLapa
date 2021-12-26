@@ -1,38 +1,36 @@
-<header class="header">
-  <div class="container header__container">
-    <button class="burger btn-reset header__burger">
-      <span class="burger__line"></span>
-    </button>
-    <nav class="nav header__nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="main-link nav__link">Home</a></li>
-        <li class="nav__item"><a href="#" class="main-link nav__link">Shop</a></li>
-        <li class="nav__item"><a class="main-link nav__link nav__link--current">Elements</a></li>
-        <li class="nav__item"><a href="#" class="main-link nav__link">Blog</a></li>
-        <li class="nav__item"><a href="#" class="main-link nav__link">Page</a></li>
-      </ul>
-      <button class="nav__close btn-reset">закрыть</button>
-    </nav>
-    <a href="#" class="logo header__logo" aria-label="logo">
+<header class="header" id="top" >
+  <div id="topss" class="container header__container nav__container ">
+    <a href="../index.html" class="logo header__logo" aria-label="logo">
       <svg>
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
+      <span class="logo header__logo header__logo logo__text">Digital-агентство в Крыму</span>
     </a>
-    <ul class="shop-nav header__shop-nav">
-      <li class="shop-nav__item">
-        <form action="#" class="shop-nav__search-form search-form">
-          <button class="search-form__btn btn-reset" aria-label="Find"></button>
-        </form>
-      </li>
-      <li class="shop-nav__item">
-        <a href="#" class="shop-nav__link shop-nav__link--user" aria-label="Go to cabinet"></a>
-      </li>
-      <li class="shop-nav__item">
-        <a href="#" class="shop-nav__link cart" aria-label="Go to cart">
-          <span class="cart__icon"></span>
-          <span class="cart__quantity quantity">3</span>
-        </a>
-      </li>
-    </ul>
+
+    <button class="burger btn-reset header__burger">
+      <span class="burger__line"></span>
+    </button>
+    <nav class="nav header__nav" id="menu-act" >
+      <svg class="burger__logo">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../services.html" class="main-link nav__link">УСЛУГИ</a></li>
+        <li class="nav__item"><a href="../cases.html" class="main-link nav__link">КЕЙСЫ</a></li>
+        <li class="nav__item"><a href="../index.html" class="main-link nav__link ">О КОМПАНИИ</a></li>
+        <li class="nav__item"><a href="../contact.html" class="main-link nav__link">КОНТАКТЫ</a></li>
+        <li class="nav__item"><a href="tel:+7903 123 45 67" class="main-link nav__link nav__phone">+7903 123 45 67</a></li>
+      </ul>
+
+      <div class="nav__mobile--btn nav__mobile--buttonWrap">
+        <button onclick="Chatra('openChat', true)" type="submit" class="form__mobile--btn btn-reset nav__text--btn">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+      </div>
+      <button class="nav__close btn-reset">
+        <svg class="nav__closeing">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </nav>
+    
   </div>
 </header>

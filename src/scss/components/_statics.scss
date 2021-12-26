@@ -1,0 +1,628 @@
+.statics {
+    margin-top: 85px;
+    &__container {
+        padding: 0;
+        text-align: center;
+    }
+
+    &__header {
+        text-align: left;
+        padding-top: 59px;
+        padding-left: 125px;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+
+    &__orange {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        width: 100%;
+        min-height: 406px;
+        background-color: var(--TulipTree);
+        box-shadow: 0px 4px 20px rgba(57, 57, 57, 0.15);
+        border-radius: 0px 200px 200px 0px; 
+        margin-right: 360px;
+        z-index: 10;
+
+        img {
+            position: absolute;
+            width: 29vw;
+            right: 180px;
+            bottom: 1px;
+        }
+    
+        &--wrapper {
+            p {
+                margin-top: 22px;
+                max-width: 620px;
+                padding-left: 125px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+    
+    
+            }
+        }
+    }
+
+    &__imgTwo {
+        margin-bottom: 100px;
+
+    }
+
+    &__imgThree {
+        margin-bottom: 10px;
+
+    }
+
+    &__imgFour {
+        margin-bottom: 11px;
+
+    }
+
+    &__imgFive {
+        margin-bottom: 11px;
+
+    }
+
+    &__imgEight {
+        margin-bottom: 11px;
+
+    }
+
+    &__imgNine {
+        margin-bottom: 15px;
+
+    }
+
+    &__imgTen {
+        margin-bottom: 15px;
+
+    }
+    
+}
+
+//adaptation
+
+@media (max-width: 1920px)  {
+    #one {
+        width: 350px; 
+    }
+    #two {
+        width: 350px; 
+    }
+    #three {
+        top: 30px;
+        width: 350px; 
+    }
+    #four {
+        top: 30px;
+        width: 350px; 
+    }
+    #five {
+        width: 350px; 
+    }
+    #six {
+        width: 350px; 
+    }
+    #seven {
+        width: 350px; 
+    }
+    #eight {
+        width: 350px; 
+        top: 30px;
+    }
+    #nine {
+        top: 30px;
+        width: 350px; 
+    }
+    #ten {
+        width: 350px; 
+    }
+}
+
+@media (max-width: 1155px)  {
+    .statics {
+
+       &__orange--wrapper {
+            p { 
+                width: 500px;
+                padding-left: 20px;
+            }
+       }
+    }
+
+    #one {
+        width: 350px; 
+        right: 0;
+    }
+    #two {
+        width: 350px; 
+        right: 0;
+    }
+    #three {
+        top: 65px;
+        width: 270px; 
+        right: 70px;
+    }
+    #four {
+        top: 50px;
+        width: 310px; 
+        right: 30px;
+    }
+    #five {
+        width: 350px; 
+        top: 25px;
+        right: 0;
+    }
+    #six {
+        width: 350px; 
+        right: 0;
+    }
+    #seven {
+        width: 350px; 
+        right: 0;
+    }
+    #eight {
+        width: 350px; 
+        right: 0;
+    }
+    #nine {
+        width: 350px; 
+        right: 0;
+    }
+    #ten {
+        width: 350px; 
+        right: 0;
+    }
+}
+
+@media (max-width: 850px)  {
+    .statics {
+
+       &__orange--wrapper {
+            p { 
+                width: 500px;
+                padding-left: 20px;
+                font-size: 1.4vw;
+            }
+       }
+    }
+
+    #one {
+        width: 330px; 
+        right: 0;
+    }
+    #two {
+        width: 330px; 
+        right: 0;
+    }
+    #three {
+        width: 270px; 
+        right: 40px;
+    }
+    #four {
+        top: 80px;
+        width: 250px; 
+        right: 20px;
+    }
+    #five {
+        width: 330px; 
+        right: 0;
+    }
+    #six {
+        width: 330px; 
+        right: 0;
+    }
+    #seven {
+        width: 330px; 
+        right: 0;
+    }
+    #eight {
+        width: 330px; 
+        right: 0;
+    }
+    #nine {
+        width: 330px; 
+        right: 0;
+    }
+    #ten {
+        width: 330px; 
+        right: 0;
+    }
+}
+
+@media (max-width: 800px)  {
+    .statics {
+
+       &__orange--wrapper {
+            p { 
+                width: 500px;
+                padding-left: 20px;
+                font-size: 1.4vw;
+            }
+       }
+    }
+
+    #one {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #two {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #three {
+        width: 160px; 
+        top: 110px;
+        right: 40px;
+    }
+    #four {
+        width: 190px; 
+        top: 100px;
+        right: 20px;
+    }
+    #five {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #six {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #seven {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #eight {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #nine {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #ten {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+}
+
+@media (max-width: 700px)  {
+    .statics {
+
+       &__orange--wrapper {
+            p { 
+                width: 400px;
+                padding-left: 20px;
+                font-size: 1.4vw;
+            }
+       }
+    }
+
+    #one {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #two {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #three {
+        width: 200px; 
+        top: 90px;
+        right: 30px;
+    }
+    #four {
+        width: 200px; 
+        top: 90px;
+        right: 20px;
+    }
+    #five {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #six {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #seven {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #eight {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #nine {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #ten {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+}
+
+@media (max-width: 600px)  {
+    .statics {
+
+       &__orange--wrapper {
+            p { 
+                width: 300px;
+                padding-left: 20px;
+                font-size: 1.4vw;
+            }
+       }
+    }
+
+    #one {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #two {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #three {
+        width: 200px; 
+        top: 100px;
+        right: 30px;
+    }
+    #four {
+        width: 200px; 
+        top: 90px;
+        right: 20px;
+    }
+    #five {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #six {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #seven {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #eight {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #nine {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #ten {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+}
+
+@media (max-width: 500px)  {
+    .statics {
+        &__header {
+            padding-top: 20px;
+        }
+       &__orange--wrapper {
+            p { 
+                width: 200px;
+                padding-left: 20px;
+                font-size: 1.4vw;
+            }
+       }
+    }
+
+    #one {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #two {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #three {
+        width: 160px; 
+        top: 110px;
+        right: 30px;
+    }
+    #four {
+        width: 200px; 
+        top: 90px;
+        right: 10px;
+    }
+    #five {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #six {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #seven {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #eight {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #nine {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+    #ten {
+        width: 200px; 
+        top: 90px;
+        right: 0;
+    }
+}
+
+@media (max-width: 410px)  {
+    .statics {
+        &__header {
+            padding-top: 40px;
+        }
+       &__orange--wrapper {
+            p { 
+                width: 200px;
+                padding-left: 20px;
+                font-size: 1.4vw;
+            }
+       }
+    }
+
+    #one {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #two {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #three {
+        width: 130px; 
+        top: 135px;
+        right: 20px;
+    }
+    #four{
+        width: 130px; 
+        top: 130px;
+        right: 10px;
+    }
+    #five {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #six {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #seven {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #eight {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #nine {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #ten {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+}
+
+@media (max-width: 342px)  {
+    .statics {
+        &__header {
+            padding-top: 40px;
+        }
+       &__orange--wrapper {
+            p { 
+                width: 160px;
+                padding-left: 20px;
+                font-size: 1.4vw;
+            }
+       }
+    }
+
+    #one {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #two {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #three {
+        width: 120px; 
+        top: 140px;
+        right: 20px;
+    }
+    #four {
+        width: 120px; 
+        top: 150px;
+        right: 10px;
+    }
+    #five {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #six {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #seven {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #eight {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #nine {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+    #ten {
+        width: 150px; 
+        top: 110px;
+        right: 0;
+    }
+}

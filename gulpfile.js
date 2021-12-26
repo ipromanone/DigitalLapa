@@ -239,7 +239,7 @@ const scriptsBuild = () => {
 
 exports.tinypng = tinypng;
 
-exports.build = series(clean, parallel(htmlInclude, scriptsBuild, fonts, resources, imgToApp, svgSprites), fontsStyle, stylesBuild, tinypng);
+exports.build = series(clean, parallel(htmlInclude, scriptsBuild, fonts, resources, imgToApp, svgSprites), fontsStyle, stylesBuild); //tinypng);
 
 
 // deploy

@@ -9,17 +9,18 @@ html {
 }
 
 body {
-  overflow-anchor: none;
   margin: 0;
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
-  color: var(--color-dark);
-  background-color: var(--color-white);
+  overflow-y: scroll;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  color: var(--Color-black);
+  background-color: var(--WhiteGreen);
+  
 }
 
-img {
-  max-width: 100%;
-}
+// img {
+//   max-width: 100%;
+// }
 
 a {
   text-decoration: none;
@@ -74,67 +75,18 @@ ul {
 
 .container {
   margin: 0 auto;
-  padding: 0 40px;
-
-  @include xs {
-    padding: 0 15px;
-  }
+  padding: 0 140px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
 
-.main-link {
-  position: relative;
-  font-size: 15px;
-  color: var(--color-dark);
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background-color: currentColor;
-    opacity: 0;
-    transition: opacity 0.15s;
-  }
-
-  &:hover {
-    &::before {
-      opacity: 1;
-      transition: opacity 0.15s;
-    }
-  }
-
-  &--white {
-    color: var(--color-white);
+@media (max-width: 800px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 0px;
   }
 }
 
-.container-narrow {
-  max-width: 1406px;
-}
 
-.to-top {
-  position: fixed;
-  right: 2%;
-  bottom: 5%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  padding: 14px 18px;
-  width: 48px;
-  height: 48px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-  background-color: var(--color-white);
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: rotate(360deg);
-    transition: transform 0.3s;
-  }
-}

@@ -1,26 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="theme-color" content="#111111">
-	<title>New site</title>
+	<title>Digatal Lapa</title>
+
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
+<style>
+	#chatra:not(.chatra--expanded) {
+	  visibility: hidden !important;
+	  opacity: 0 !important;
+	  pointer-events: none;
+	  transition: none;
+	}
+	</style>
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'QS6YtX7qkZByGc9Bx';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
 <body>
 	<div class="site-container">
-    @include('html/header.html')
+    	@include('html/header.html')
     <main class="main">
-      @include('html/hero.html')
-      @include('html/banners.html')
-      @include('html/main-products.html')
-      @include('html/shop-banners.html')
+		@include('html/hero.html')
+		@include('html/main-products.html')
+		@include('html/orangBlackBCG.html')
+		@include('html/partner.html')
+		@include('html/agency.html')
+		@include('html/mobile-partner.html')
+		@include('html/mobile-animation.html')
+		@include('html/change.html')
+		@include('html/banners.html')
+		@include('html/form.html')
+		
     </main>
 		@include('html/footer.html')
 		<!-- @include('html/h1.html') пример инклуда -->
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" integrity="sha512-kDuUo39RGApdfHkM1WQL8Pg9BYtYGS5rD14AzePsD4SEaixw7v/ykAkLMdsSjuBCNFE6/FAP+WIHh6N6QZJl5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js" integrity="sha512-hFyYiBIWCYSyo98oFGWjG5V8HEV4g5O2pxu0mzU8qIMC7lrrwtcKWoRDZcpRL0ywIIM2d/XsBJ9iXNLFf6kIgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js" integrity="sha512-7nSmgdAZ7oPdT5aa2a4YauI8Y1xgaj6zZtQo9+EIEhpcNEiRHPAtyTKYckBQ0lmg1xQKrdWweHBcN/D0tdnvCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js" integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
 	<script src="js/main.js"></script>
 </body>
 </html>

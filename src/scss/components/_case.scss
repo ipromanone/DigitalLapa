@@ -1,0 +1,115 @@
+.case {
+    &__container {
+        padding: 0;
+        // padding-left: 118px;
+        // padding-right: 107px;
+
+    }
+
+    &__back {
+        padding-left: 37px;
+    }
+
+    svg {
+        padding-top: 42px;
+        width: 60px;
+        height: 60px;
+    }
+
+    &__head {
+        padding-left: 37px;
+        padding-top: 22px;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 140%;
+        color: var(--Color-black);
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    &__item {
+        width: 50%;
+        cursor: pointer;
+        height: 333px;
+        color: var(--Color-white);
+
+    }
+
+    &__orange {
+        background-color: var(--TulipTree);
+    }
+
+    &__greey {
+        background-color: var(--Fedora);
+    }
+
+    &__title {
+        margin-top: 226px;
+        padding-bottom: 6px;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__left {
+        margin-left: 30px;
+    }
+
+    &__right {
+        margin-left: 142px;
+    }
+
+    &__wrapperBtn {
+        padding-top: 31px;
+        text-align: center;
+        button {
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0.01em;
+        }
+    }
+
+    
+
+    &__form {
+        margin-top: 175px;
+    }
+
+    
+
+    &__points {
+        margin-top: 160px;
+        height: 152px;
+        img {
+            width: 15vw;
+        }
+    }
+
+    
+}
+
+
+
+.case__btn {
+    padding-right: 60px;
+    margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+    #o1, #o2 {
+
+        background-color: var(--TulipTree);
+    }
+
+    #b2, #b22 {
+        background-color: var(--Fedora);
+    }
+}

@@ -1,0 +1,30 @@
+<section class="form">
+  <div class="container form__container services__container">
+    <h2 class="visually-hidden">Form</h2>
+    <div class="form__content">
+      <h2 class="form__head">ОСТАВИТЬ ЗАЯВКУ</h2>
+      <p class="form__text">для разработки индивидуального коммерческого предложения.<br> Мы отвечаем быстро в рабочее время.</p>
+      <form action="../mail.php " method="POST" class="form__form formname">
+        <div class="form__wrapper ">
+          <div class="form__inputs">
+
+            <input type="text" name="user_name" placeholder="Имя" required>
+            <input type="text" name="user_phone" placeholder="Телефон">
+            <input type="text" name="user_email" placeholder="E-mail" required>
+
+            <p class="form__txt"></p>
+          </div>
+          <div class="form__sub">
+            <input type="text" name="user_text" placeholder="Пожелания и вопросы" required>
+          </div>
+        </div>
+        <button type="submit" name="submit" id="submit" class="form__btn btn-reset">ОТПРАВИТЬ ЗАЯВКУ</button>
+        <div class="form__checked">
+          <input type="checkbox" checked id="checkbox" name="agreement" class="form__point checkbox__input">
+          <label for="checkbox" id="checkbox-text">Я принимаю условия Пользовательского соглашения<br> и Политики
+            конфиденциальности персональных данных.</label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

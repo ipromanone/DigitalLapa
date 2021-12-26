@@ -4,25 +4,30 @@
 @import "vendor";
 @import "settings";
 
+
+
+
 // CUSTOM COMPONENTS STYLES
 @import "./components/header";
 @import "./components/nav";
-@import "./components/shop-nav";
-@import "./components/hero";
-@import "./components/banners";
+@import "./components/_logo";
+@import "./components/_hero";
 @import "./components/main-products";
 @import "./components/product";
-@import "./components/shop-banners";
-@import "./components/hero-catalog";
-@import "./components/breadcrumbs";
-@import "./components/catalog-filter";
-@import "./components/card";
-@import "./components/card-slider";
-@import "./components/footer";
-// .burger {
-//   --burger-width: 40px;
-//   --burger-height: 20px;
-//   --burger-line-height: 2px;
-
-//   @include burger;
-// }
+@import "./components/partner";
+@import "./components/_agency";
+@import "./components/_change";
+@import "./components/_banners";
+@import "./components/_form";
+@import "./components/_footer";
+@import "./components/_sevices";
+@import "./components/_case";
+@import "./components/_context";
+@import "./components/_statics";
+@import "./components/_contacts";
+@import "./components/_politic";
+@import "./components/_error";
+@import "./components/_orange";
+@import "./components/mobile-animation";
+@import "./components/footer-mobile";
+@import "./components/orangeBlack";

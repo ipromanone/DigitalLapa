@@ -1,352 +1,709 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="theme-color" content="#111111">
-	<title>New site</title>
+	<title>Digatal Lapa</title>
+
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
+<style>
+	#chatra:not(.chatra--expanded) {
+	  visibility: hidden !important;
+	  opacity: 0 !important;
+	  pointer-events: none;
+	  transition: none;
+	}
+	</style>
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'QS6YtX7qkZByGc9Bx';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
 <body>
 	<div class="site-container">
-    <header class="header">
-  <div class="container header__container">
-    <button class="burger btn-reset header__burger">
-      <span class="burger__line"></span>
-    </button>
-    <nav class="nav header__nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="main-link nav__link">Home</a></li>
-        <li class="nav__item"><a href="#" class="main-link nav__link">Shop</a></li>
-        <li class="nav__item"><a class="main-link nav__link nav__link--current">Elements</a></li>
-        <li class="nav__item"><a href="#" class="main-link nav__link">Blog</a></li>
-        <li class="nav__item"><a href="#" class="main-link nav__link">Page</a></li>
-      </ul>
-      <button class="nav__close btn-reset">закрыть</button>
-    </nav>
-    <a href="#" class="logo header__logo" aria-label="logo">
+    	<header class="header" id="top" >
+  <div id="topss" class="container header__container nav__container ">
+    <a href="../index.html" class="logo header__logo" aria-label="logo">
       <svg>
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
+      <span class="logo header__logo header__logo logo__text">Digital-агентство в Крыму</span>
     </a>
-    <ul class="shop-nav header__shop-nav">
-      <li class="shop-nav__item">
-        <form action="#" class="shop-nav__search-form search-form">
-          <button class="search-form__btn btn-reset" aria-label="Find"></button>
-        </form>
-      </li>
-      <li class="shop-nav__item">
-        <a href="#" class="shop-nav__link shop-nav__link--user" aria-label="Go to cabinet"></a>
-      </li>
-      <li class="shop-nav__item">
-        <a href="#" class="shop-nav__link cart" aria-label="Go to cart">
-          <span class="cart__icon"></span>
-          <span class="cart__quantity quantity">3</span>
-        </a>
-      </li>
-    </ul>
+
+    <button class="burger btn-reset header__burger">
+      <span class="burger__line"></span>
+    </button>
+    <nav class="nav header__nav" id="menu-act" >
+      <svg class="burger__logo">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../services.html" class="main-link nav__link">УСЛУГИ</a></li>
+        <li class="nav__item"><a href="../cases.html" class="main-link nav__link">КЕЙСЫ</a></li>
+        <li class="nav__item"><a href="../index.html" class="main-link nav__link ">О КОМПАНИИ</a></li>
+        <li class="nav__item"><a href="../contact.html" class="main-link nav__link">КОНТАКТЫ</a></li>
+        <li class="nav__item"><a href="tel:+7903 123 45 67" class="main-link nav__link nav__phone">+7903 123 45 67</a></li>
+      </ul>
+
+      <div class="nav__mobile--btn nav__mobile--buttonWrap">
+        <button onclick="Chatra('openChat', true)" type="submit" class="form__mobile--btn btn-reset nav__text--btn">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+      </div>
+      <button class="nav__close btn-reset">
+        <svg class="nav__closeing">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </nav>
+    
   </div>
 </header>
 
     <main class="main">
-      <section class="hero">
-  <div class="container hero__container">
-    <h1 class="visually-hidden">Zonex - best shop!</h1>
-    <div class="banner-slider">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="hero__content">
-            <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
-            <p class="hero__descr">All Sale Items are Final Sale / Free Shipping on All Orders</p>
-            <img src="img/girl.png" class="hero__image" alt="Girl" aria-hidden="true">
-          </div>
+		<section class="hero">
+    <div class="container hero__container tn-atom">
+        <h1 class="visually-hidden">DigitalLapa</h1>
+        <h2 class="hero__title">НАШ МИР — МИР ЖЕЛАНИЙ. МЫ ЭТИ ЖЕЛАНИЯ СОЗДАЁМ!</h2>
+        <div class="hero__title hero__bottom">
+            <svg>
+                <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+            <p class="hero__descr">Магия начинается уже здесь. Нажми на экран.</p>
         </div>
-        <div class="swiper-slide">
-          <div class="hero__content">
-            <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
-            <p class="hero__descr">All Sale Items are Final Sale / Free Shipping on All Orders</p>
-            <img src="img/girl.png" class="hero__image" alt="Girl" aria-hidden="true">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="hero__content">
-            <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
-            <p class="hero__descr">All Sale Items are Final Sale / Free Shipping on All Orders</p>
-            <img src="img/girl.png" class="hero__image" alt="Girl" aria-hidden="true">
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination banner-pag"></div>
+        
+        <canvas class="paints" width="1920" height="1080"></canvas>
     </div>
-    <div class="marketing">
-      <div class="marketing__image">
-        <img src="img/product-image.jpg" alt="product 1">
-      </div>
-      <div class="marketing__text">
-        <span class="marketing__descr">Someone purchaed a</span>
-        <h3 class="marketing__title">Faux shearling double-breasted coat</h3>
-        <span class="marketing__when-from">15 minutes ago London, Great Britain</span>
-      </div>
-      <button class="btn-reset marketing__close" aria-label="Close marketing block"></button>
-    </div>
-  </div>
 </section>
-
-      <section class="banners">
-  <h2 class="visually-hidden">Banners</h2>
-  <div class="container banners__container">
-    <ul class="banners__list">
-      <li class="banners__item">
-        <article class="banners__article banners-article banners-article--midseason">
-          <h3 class="banners-article__title">Women's Mid-Season</h3>
-          <a href="" class="main-link banners-article__link">Shop Now</a>
-        </article>
-      </li>
-      <li class="banners__item">
-        <article class="banners__article banners-article banners-article--summer">
-          <h3 class="banners-article__title">Summer Romance</h3>
-          <a href="" class="main-link banners-article__link">Shop Now</a>
-        </article>
-      </li>
-      <li class="banners__item">
-        <article class="banners__article banners-article banners-article--accs">
-          <h3 class="banners-article__title">20% Off All Accessories</h3>
-          <a href="" class="main-link banners-article__link">Shop Now</a>
-        </article>
-      </li>
-    </ul>
-  </div>
-</section>
-
-      <section class="main-products">
+		<section class="main-products">
   <h2 class="visually-hidden">Products on Main Page</h2>
   <div class="container main-products__container">
-    <ul class="main-products__nav">
-      <li class="main-products__item"><button class="main-products__btn main-products__btn--current btn-reset main-link" data-filter="best-sellers">Best Sellers</button>
-      </li>
-      <li class="main-products__item"><button class="main-products__btn btn-reset main-link"
-          data-filter="new-products">New Products</button>
-      </li>
-      <li class="main-products__item"><button class="main-products__btn btn-reset main-link"
-          data-filter="sale-products">Sale Products</button></li>
-    </ul>
-    <ul class="main-products__list products-grid">
-      <!-- <li class="products-grid__item">
-        <article class="product">
-          <div class="product__image">
-            <img src="img/prod-1.jpg" alt="prod 1">
+    <h2 class="main-products__text main-products__nav">МЫ ПРЕДЛАГАЕМ</h2>
+    <div id="caros" class="main-products__list products-grid owl-carousel owl-theme loop">
+        <div class="products-grid__item ">
+            <div class="card">
+              <div class="card__content">
+                <div class="card__front">
+                    <svg id="card__icon1">
+                        <use class="use" xlink:href="img/sprite.svg#smm"></use>
+                    </svg>
+                    <a class="card__wr" href="../services.html"></a>
+                   <h3 class="card__title"> СММ ПРОДВИЖЕНИЕ</h3>
+                </div>
+                <div class="card__back">
+                  <a class="card__wr" href="../services.html"></a>
+                  <p class="card__body"><a href="../services.html">Комплексный маркетинг в социальных сетях (IG Fb VK Ok Tg и тд)</a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="product__title">
-            <a href="#">
-              Eye Mesh Boat Shoes
-            </a>
-          </h3>
-          <span class="product__price">$220.00</span>
-        </article>
-      </li>
-      <li class="products-grid__item">
-        <article class="product">
-          <div class="product__image">
-            <img src="img/prod-2.jpg" alt="prod 2">
+          <div class="products-grid__item">
+            <div class="card">
+              <div class="card__content">
+                <div class="card__front">
+                    <svg id="card__icon2">
+                        <use class="use" xlink:href="img/sprite.svg#brendMarcet"></use>
+                      </svg>  
+                      <a class="card__wr" href="../services.html"></a>
+                  <h3 class="card__title">РАЗРАБОТКА ФИРМЕННОГО СТИЛЯ</h3>
+                </div>
+                <div class="card__back">
+                  <a class="card__wr" href="../services.html"></a>
+                  <p class="card__body"><a href="../services.html">Запомнят и узнают</a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="product__title">
-            <a href="#">
-              Eye Mesh Boat Shoes
-            </a>
-          </h3>
-          <span class="product__price">$220.00</span>
-        </article>
-      </li>
-      <li class="products-grid__item">
-        <article class="product">
-          <div class="product__image">
-            <img src="img/prod-3.jpg" alt="prod 3">
+          <div class="products-grid__item center">
+            <div class="card">
+              <div class="card__content">
+                <div class="card__front">
+                    <svg id="card__icon3">
+                        <use class="use" xlink:href="img/sprite.svg#context"></use>
+                      </svg>
+                      <a class="card__wr" href="../services.html"></a>
+                  <h3 class="card__title">КОНТЕКСТНАЯ РЕКЛАМА </h3>
+                </div>
+                <div class="card__back">
+                  <a class="card__wr" href="../services.html"></a>
+                  <p class="card__body"><a href="../services.html">Яндекс и Гугл работают на вас</a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="product__title">
-            <a href="#">
-              Eye Mesh Boat Shoes
-            </a>
-          </h3>
-          <span class="product__price">$220.00</span>
-        </article>
-      </li>
-      <li class="products-grid__item">
-        <article class="product">
-          <div class="product__image">
-            <img src="img/prod-4.jpg" alt="prod 4">
+          <div class="products-grid__item">
+            <div class="card">
+              <div class="card__content">
+                <div class="card__front">
+                    <svg id="card__icon4">
+                        <use class="use" xlink:href="img/sprite.svg#target"></use>
+                      </svg>
+                      <a class="card__wr" href="../services.html"></a>
+                  <h3 class="card__title" id="targeting">ТАРГЕТИРОВАННАЯ РЕКЛАМА </h3>
+                </div>
+                <div class="card__back">
+                  <a class="card__wr" href="../services.html"></a>
+                  <p class="card__body"><a href="../services.html">Реклама в соц сетях IG Fb VK Ok Tg и тд</a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="product__title">
-            <a href="#">
-              Eye Mesh Boat Shoes
-            </a>
-          </h3>
-          <span class="product__price">$220.00</span>
-        </article>
-      </li>
-      <li class="products-grid__item">
-        <article class="product">
-          <div class="product__image">
-            <img src="img/prod-5.jpg" alt="prod 5">
+          <div class="products-grid__item">
+            <div class="card">
+              <div class="card__content">
+                <div class="card__front">
+                    <svg id="card__icon5">
+                        <use class="use" xlink:href="img/sprite.svg#ceo"></use>
+                      </svg>
+                      <a class="card__wr" href="../services.html"></a>
+                  <h3 class="card__title">СЕО ПРОДВИЖЕНИЕ</h3>
+                </div>
+                <div class="card__back">
+                  <a class="card__wr" href="../services.html"></a>
+                  <p class="card__body"><a href="../services.html">Двигатель вашего сайта</a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="product__title">
-            <a href="#">
-              Eye Mesh Boat Shoes
-            </a>
-          </h3>
-          <span class="product__price">$220.00</span>
-        </article>
-      </li>
-      <li class="products-grid__item">
-        <article class="product">
-          <div class="product__image">
-            <img src="img/prod-6.jpg" alt="prod 6">
+          <div class="products-grid__item">
+            <div class="card">
+              <div class="card__content">
+                <div class="card__front">
+                    <svg id="card__icon6">
+                        <use class="use" xlink:href="img/sprite.svg#create"></use>
+                      </svg>
+                      <a class="card__wr" href="../services.html"></a>
+                  <h3 class="card__title">РАЗРАБОТКА САЙТА </h3>
+                </div>
+                <div class="card__back">
+                  <a class="card__wr" href="../services.html"></a>
+                  <p class="card__body"><a href="../services.html">Лендинг, магазин ит д (как лучше перечислить)</a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="product__title">
-            <a href="#">
-              Eye Mesh Boat Shoes
-            </a>
-          </h3>
-          <span class="product__price">$220.00</span>
-        </article>
-      </li>
-      <li class="products-grid__item">
-        <article class="product">
-          <div class="product__image">
-            <img src="img/prod-7.jpg" alt="prod 7">
+          <div class="products-grid__item">
+            <div class="card">
+              <div class="card__content">
+                <div class="card__front">
+                    <svg id="card__icon7">
+                        <use class="use" xlink:href="img/sprite.svg#consalting"></use>
+                      </svg>
+                      <a class="card__wr" href="../services.html"></a>
+                  <h3 class="card__title">БИЗНЕС-КОНСАЛТИНГ</h3>
+                </div>
+                <div class="card__back">
+                  <a class="card__wr" href="../services.html"></a>
+                  <p class="card__body"><a href="../services.html">Без терминов - просто продажи в Интернет
+
+                  </a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="product__title">
-            <a href="#">
-              Eye Mesh Boat Shoes
-            </a>
-          </h3>
-          <span class="product__price">$220.00</span>
-        </article>
-      </li>
-      <li class="products-grid__item">
-        <article class="product">
-          <div class="product__image">
-            <img src="img/prod-8.jpg" alt="prod 8">
+          <div class="products-grid__item">
+            <div class="card">
+              <div class="card__content">
+                <div class="card__front">
+                    <svg id="card__icon8">
+                        <use class="use" xlink:href="img/sprite.svg#perfomans"></use>
+                      </svg>
+                      <a class="card__wr" href="../services.html"></a>
+                      <h3 class="card__title">ПЕРФОМАНС МАРКЕТИНГ</h3>
+                </div>
+                <div class="card__back">
+                  <a class="card__wr" href="../services.html"></a>
+                  <p class="card__body"><a href="../services.html">Оплата только за выполнение определенных KPI в максимально короткие сроки</a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="product__title">
-            <a href="#">
-              Eye Mesh Boat Shoes
-            </a>
-          </h3>
-          <span class="product__price">$220.00</span>
-        </article>
-      </li>
-      <li class="products-grid__item">
-        <article class="product">
-          <div class="product__image">
-            <img src="img/prod-9.jpg" alt="prod 9">
-          </div>
-          <h3 class="product__title">
-            <a href="#">
-              Eye Mesh Boat Shoes
-            </a>
-          </h3>
-          <span class="product__price">$220.00</span>
-        </article>
-      </li>
-      <li class="products-grid__item">
-        <article class="product">
-          <div class="product__image">
-            <img src="img/prod-10.jpg" alt="prod 10">
-          </div>
-          <h3 class="product__title">
-            <a href="#">
-              Eye Mesh Boat Shoes
-            </a>
-          </h3>
-          <span class="product__price">$220.00</span>
-        </article>
-      </li> -->
-    </ul>
-    <div class="main-products__btn-center">
-      <button class="btn-reset main-products__more">
-        <span>Load More</span>
-        <svg>
-          <use xlink:href="img/sprite.svg#down-arrow"></use>
-        </svg>
-      </button>
     </div>
   </div>
 </section>
 
-      <section class="shop-banners">
-  <h2 class="visually-hidden">Banners</h2>
-  <div class="container shop-banners__container">
-    <a href="#" class="shop-banners__banner shop-banner shop-banner--men">
-      <h3 class="shop-banner__title">Men’s Sportswear</h3>
-      <span class="shop-banner__text main-link main-link--white">Read more</span>
-    </a>
-    <a href="#" class="shop-banners__banner shop-banner shop-banner--women">
-      <h3 class="shop-banner__title">Find your fit</h3>
-      <span class="shop-banner__text main-link main-link--white">Read more</span>
-    </a>
+		<div class="orangeBlack">
+    <div class="container orangeBlack__container">
+        <h1 class="visually-hidden">Choose</h1>
+        <h2 class="orangeBlack__title">DIGITAL ЛАПА <br> агентство в Крыму</h2>
+        <div class="orangeBlack__black">
+            <div class="orangeBlack__context">
+                <div class="orangeBlack__item">
+                    <p class="orangeBlack__tex">AMDG — международное digital-агентство, предоставляющее полный комплекс услуг для продвижения бизнеса в интернете <br><br>
+
+                        Мы сфокусировались на детальной разработке наиболее результативных для клиентов услуг, чтобы предложить оптимальную цену за лучший состав работ. Результат 14-летней работы подтверждаем лидирующими позициями в рейтингах..<br><br>
+                        
+                        Мы начинали в 2007 году в Минске с небольшой командой. За это время открылись офисы в Москве, Нью-Йорке и Алматы. <br><br></p>
+                </div>
+            </div>
+            <div class="orangeBlack__dicoration">
+                <div class="orangeBlack__points">
+                  <img src="../img/points.png" alt="decoration">
+                </div>
+              </div>
+
+        </div>
+        <div class="orangeBlack__orange"></div>
+    </div>
+</div>
+		<section class="container partner partner__container">
+    <div class="container">
+        <ul class="partner__brand">
+            <li class="partner__item">
+                <img src="../img/logo-1.png" alt="partner-1">
+            </li>
+            <li class="partner__item">
+                <img src="../img/logo-2.png" alt="partner-2">
+            </li>
+            <li class="partner__item">
+                <img src="../img/logo-3.png" alt="partner-3">
+            </li>
+            <li class="partner__item">
+                <img src="../img/logo-4.png" alt="partner-4">
+            </li>
+            <li class="partner__item">
+                <img src="../img/logo-5.png" alt="partner-5">
+            </li>
+            <li class="partner__item">
+                <img src="../img/logo-6.png" alt="partner-6">
+            </li>
+        </ul>
+    </div>
+</section>
+		<section class="agency">
+  <h2 class="visually-hidden">My agency</h2>
+  <div class="container agency__container">
+    <h2 class="agency__head">DIGITAL ЛАПА — агентство в Крыму</h2>
+  </div>
+  <div class="agency__orange">
+    <div class="agency__orange--wrapper">
+      <p class="agency__orange--text text agency__top--text">AMDG — международное digital-агентство, предоставляющее
+        полный комплекс услуг для
+        продвижения бизнеса в интернете<br><br>
+        Мы сфокусировались на детальной разработке наиболее результативных для клиентов услуг, чтобы предложить
+        оптимальную цену за лучший состав работ. Результат 14-летней работы подтверждаем лидирующими позициями в
+        рейтингах..<br><br>
+        Мы начинали в 2007 году в Минске с небольшой командой. За это время открылись офисы в Москве, Нью-Йорке и
+        Алматы.<br><br>
+        Наши агентства развивают экспертизу в своем регионе — это дает пространство дляҐманевра. За 14 лет работы
+        реализовали более 2000 проектов международных и национальных рекламодателей.<br><br>
+        В Беларуси стали digital агентством №1, в России входим в ТОП 20 лучших агентств. 250 человек — ежедневно
+        команда
+        профессионалов решает бизнес-задачи клиентов.<br><br>
+        AMDG сертифицированное агентство и официальный партнёр ключевых международных площадок и социальных платформ. Мы
+        собрали портфель эффективных услуг, чтобы работать на результат.<br><br>
+        Наша миссия — увеличивать доходность бизнесов, развивать бренды digital-инструментами.<br><br>
+        В числе наших клиентов: Райффайзенбанк, Гранд Экспресс, Росводоканал, Аэрос, Аэрофлот, Профиспорт,
+        ABC-Klinkergruppe, РГУ нефти и газа имени И.М. Губкина, Партия Роста, НАЭН, Человек и закон.
+      </p>
+    </div>
+  </div>
+
+  
+
+
+
+  <div class="agency__photo">
+    <div class="agency__item">
+      <img src="../img/girl.png" alt="team">
+    </div>
+  </div>
+
+  <div class="agency-mobile--wrap">
+    <div class="agency__mobile--orange">
+      <div class="agancy__mobile--wrapper">
+      </div>
+    </div>
+
+    <div class="agency__mobile--photo">
+      <div class="agency__mobile--item">
+        <img src="../img/mobile-girl.png" alt="team">
+      </div>
+    </div>
+
+    <div class="agency__mobile--dicoration">
+      <div class="agency__mobile--points">
+        <img src="../img/mobile-dicoration.png" alt="decoration">
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+		    <div class="partner__brand partner__brand--mobile owl-carousel owl-theme">
+        <img src="../img/logo-1.png" alt="partner-1">
+        <img src="../img/logo-2.png" alt="partner-2">
+        <img src="../img/logo-3.png" alt="partner-3">
+        <img src="../img/logo-4.png" alt="partner-4">
+        <img src="../img/logo-5.png" alt="partner-5">
+        <img src="../img/logo-6.png" alt="partner-6">
+      </div>
+
+		<section class="mobile-star">
+    <div class="container mobile-star__container">
+        <h1 class="visually-hidden">Choose</h1>
+        <h2 class="mobile-star__title">ПОЧЕМУ НАС ВЫБИРАЮТ</h2>
+        <div class="mobile__wr">
+            <div class="mobile-star__black">
+                <div class="mobile-star__context">
+                    <div class="mobile-star__item">
+                        <h3 class="header">Преимущество 1</h3>
+                        <p class="mobile-star__tex">Наша миссия — увеличивать доходность бизнесов, развивать бренды digital-инструментами.</p>
+                    </div>
+                    <div class="mobile-star__item">
+                        <h3 class="header">Преимущество 2</h3>
+                        <p class="mobile-star__tex">Мы начинали в 2007 году в Минске с небольшой командой. За это время открылись офисы в Москве, Нью-Йорке и Алматы.</p>
+                    </div>
+                    <div class="mobile-star__item">
+                        <h3 class="header">Преимущество 3</h3>
+                        <p class="mobile-star__tex">Наша миссия — увеличивать доходность бизнесов, развивать бренды digital-инструментами.</p>
+                    </div>
+                    <div class="mobile-star__item">
+                        <h3 class="header">Преимущество 4</h3>
+                        <p class="mobile-star__tex">Мы начинали в 2007 в Минске с небольшой командой. За это время открылись офисы  в Москве, Нью-Йорке и Алматы.</p>
+                    </div>
+                </div>
+                <div id="target" class="mobile-star__animation">
+                    <svg>
+                        <use id="vector" xlink:href="img/sprite.svg#vector-line2"></use>
+                    </svg>
+                    <img class="vector-star" id="vectorss" src="../img/star2.png" alt="star">
+                </div>
+            </div>
+            <div class="mobile-star__orange"></div>
+        </div>
+
+    </div>
+</section>
+		<section class="change">
+    <h2 class="visually-hidden">Why change</h2>
+    <div class="container change__container">
+        <h2 class="change__head">ПОЧЕМУ НАС ВЫБИРАЮТ</h2>
+        <div class="change__grid">
+            <div class="change__item--one">
+                <p class="change__text">Преимущество 1<br> Наша миссия — увеличивать доходность бизнесов, развивать бренды digital-инструментами.</p>
+            </div>
+            <div class="change__item--two change__img">
+            </div>
+            <div class="change__item--three">
+                <p class="change__text">Преимущество 2<br> Мы начинали в 2007 году в Минске с небольшой командой. За это время открылись офисы в Москве, Нью-Йорке и Алматы.</p>
+            </div>
+            <div class="change__item--four change__img"></div>
+            <div class="change__item--eight change__img">
+            </div>
+            <div class="change__item--five">
+                <p class="change__text">Преимущество 3<br> Наша миссия — увеличивать доходность бизнесов, развивать бренды digital-инструментами.</p>
+            </div>
+            <div class="change__item--six change__img"></div>
+            <div class="change__item--seven">
+                <p class="change__text">Преимущество 4<br> Мы начинали в 2007 году  в Минске с небольшой командой. За это время открылись офисы  в Москве, Нью-Йорке и Алматы.</p>
+            </div>
+            
+        </div>
+        <button class="change__btn btn-reset">
+            <p></p>
+            <svg>
+                <use xlink:href="img/sprite.svg#"></use>
+            </svg>
+        </button>
+    </div>
+</section>
+		<section class="banners">
+    <h2 class="visually-hidden">Banners</h2>
+    <h2 class="banners__head">Мы УЖЕ сделали</h2>
+    <div class="container banners__container">
+        <ul class="banners__list">
+            <li class="banners__item item__left" id="liRight1">
+                <a href="../cases.html">
+                    <article class="banners__article banners__article banners-article--left banners__left ">
+                        <h3 class="banners__title rights">
+                            Юридическая консультация
+                        </h3>
+                        <p class="banners-article__link rights">Бренд-маркетинг, разработка<br> сайта, СЕО и СММ продвижение</p>
+                    </article>
+                </a>
+                
+            </li>
+            <li class="banners__item" id="liRight2">
+                <a href="../cases.html">
+                    <article class="banners__article banners__article banners-article--right banners__left ">
+                        <h3 class="banners__title lefts">
+                            Логистическая компания
+                        </h3>
+                        <p class="banners-article__link lefts">Разработка сайта,<br> СЕО и СММ продвижение</p>
+                    </article>
+                </a>
+                
+            </li>
+            <li class="banners__item" id="liRight3" style="display: none;">
+                <a href="../cases.html">
+                    <article id="orange1" class="banners__article banners__article banners-article--right banners__left">
+                        <h3 class="banners__title rights">
+                            Логистическая компания
+                        </h3>
+                        <p class="banners-article__link rights">Разработка сайта,<br> СЕО и СММ продвижение</p>
+                    </article>
+                </a>
+                
+            </li>
+            <li class="banners__item item__left" id="liRight4" style="display: none;">
+                <a href="../cases.html">
+                    <article id="black1" class="banners__article banners__article banners-article--left banners__left">
+                        <h3 class="banners__title lefts">
+                            Юридическая консультация
+                        </h3>
+                        <p class="banners-article__link lefts">Бренд-маркетинг, разработка<br> сайта, СЕО и СММ продвижение</p>
+                    </article>
+                </a>
+                
+            </li>
+            <li class="banners__item item__left" id="liRight5" style="display: none;">
+                <a href="../cases.html">
+                    <article class="banners__article banners__article banners-article--left banners__left">
+                        <h3 class="banners__title rights">
+                            Юридическая консультация
+                        </h3>
+                        <p class="banners-article__link rights">Бренд-маркетинг, разработка<br> сайта, СЕО и СММ продвижение</p>
+                    </article>
+                </a>
+                
+            </li>
+            <li class="banners__item" id="liRight6" style="display: none;">
+                <a href="../cases.html">
+                    <article class="banners__article banners__article banners-article--right banners__left">
+                        <h3 class="banners__title lefts">
+                            Логистическая компания
+                        </h3>
+                        <p class="banners-article__link lefts">Разработка сайта,<br> СЕО и СММ продвижение</p>
+                    </article>
+                </a>
+                
+            </li>
+            <li class="banners__item banners__hide" id="liRight7" style="display: none;">
+                <a href="../cases.html">
+                    <article id="orange2" class="banners__article banners__article banners-article--right banners__left">
+                        <h3 class="banners__title rights">
+                            Логистическая компания
+                        </h3>
+                        <p class="banners-article__link rights">Разработка сайта,<br> СЕО и СММ продвижение</p>
+                    </article>
+                </a>
+                
+            </li>
+            <li class="banners__item item__left banners__hide" id="liRight8" style="display: none;">
+                <a href="../cases.html">
+                    <article id="black2" class="banners__article banners__article banners-article--left banners__left">
+                        <h3 class="banners__title lefts">
+                            Юридическая консультация
+                        </h3>
+                        <p class="banners-article__link lefts">Бренд-маркетинг, разработка<br> сайта, СЕО и СММ продвижение</p>
+                    </article>
+                </a>
+                
+            </li>
+            <li class="banners__item item__left banners__hide" id="liRight9" style="display: none;">
+                <a href="../cases.html">
+                    <article class="banners__article banners__article banners-article--left banners__left">
+                        <h3 class="banners__title rights">
+                            Юридическая консультация
+                        </h3>
+                        <p class="banners-article__link rights">Бренд-маркетинг, разработка<br> сайта, СЕО и СММ продвижение</p>
+                    </article>
+                </a>
+                
+            </li>
+            <li class="banners__item banners__hide" id="liRight10" style="display: none;">
+                <a href="../cases.html">
+                    <article class="banners__article banners__article banners-article--right banners__left">
+                        <h3 class="banners__title lefts">
+                            Логистическая компания
+                        </h3>
+                        <p class="banners-article__link lefts">Разработка сайта,<br> СЕО и СММ продвижение</p>
+                    </article>
+                </a>
+                
+            </li>
+
+        </ul>
+        <div class="banners__all">
+            <div class="banners__link bunners__btn-center">
+                <button class="banners__more btn-reset" id="butt">
+                    <span>ВСЕ ПРОЕКТЫ</span> 
+                    <svg>
+                        <use use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</section>
+		<section class="form">
+  <div class="container form__container services__container">
+    <h2 class="visually-hidden">Form</h2>
+    <div class="form__content">
+      <h2 class="form__head">ОСТАВИТЬ ЗАЯВКУ</h2>
+      <p class="form__text">для разработки индивидуального коммерческого предложения.<br> Мы отвечаем быстро в рабочее время.</p>
+      <form action="../mail.php " method="POST" class="form__form formname">
+        <div class="form__wrapper ">
+          <div class="form__inputs">
+
+            <input type="text" name="user_name" placeholder="Имя" required>
+            <input type="text" name="user_phone" placeholder="Телефон">
+            <input type="text" name="user_email" placeholder="E-mail" required>
+
+            <p class="form__txt"></p>
+          </div>
+          <div class="form__sub">
+            <input type="text" name="user_text" placeholder="Пожелания и вопросы" required>
+          </div>
+        </div>
+        <button type="submit" name="submit" id="submit" class="form__btn btn-reset">ОТПРАВИТЬ ЗАЯВКУ</button>
+        <div class="form__checked">
+          <input type="checkbox" checked id="checkbox" name="agreement" class="form__point checkbox__input">
+          <label for="checkbox" id="checkbox-text">Я принимаю условия Пользовательского соглашения<br> и Политики
+            конфиденциальности персональных данных.</label>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
 
+		
     </main>
 		<footer class="footer">
 	<div class="container footer__container">
     <div class="footer__content">
+      <a href="" class="logo footer__logo " aria-label="logo">
+        <svg id="logo__footer">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+        <span class="logo footer__logo header__logo logo__text footer__down">Digital-агентство в Крыму</span>
+      </a>
       <div class="footer__top">
         <div class="footer__column">
-          <h3 class="footer__title">Customer Service</h3>
           <ul class="footer__list">
-            <li class="footer__item"><a href="tel:+8665972742" class="footer__link">Phone: +866.597.2742</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Live chat</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+            <li class="footer__item"> ИП Подгорных Кристина Вячеславовна</li>
+            <li class="footer__item">ИНН 911001640334</li>
+            <li class="footer__item">ОГРН ИП 321911200069323</li>
+            <li class="footer__item">Крым, г. Евпатория</li>
+            <li class="footer__item footer__politic"><a href="../politics.html" class="footer__link">Политика Конфиденциальности</a></li>
+            <li class="footer__item footer__tm">© 2021 Digital Лапа</li>
+          </ul>
+        </div>
+        <div class="footer__column mobile">
+          <ul class="footer__list ">
+            <li class="footer__item footer__link"><a href="../services.html">УСЛУГИ</a></li>
+            <li class="footer__item footer__link"><a href="../cases.html">КЕЙСЫ</a></li>
+            <li class="footer__item footer__link"><a href="../index.html"> О КОМПАНИИ</a></li>
+            <li class="footer__item footer__link"><a href="../contact.html">КОНТАКТЫ</a></li>
           </ul>
         </div>
         <div class="footer__column">
-          <h3 class="footer__title">Company</h3>
-          <ul class="footer__list">
-            <li class="footer__item"><a href="tel:+8665972742" class="footer__link">What We Do</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Available Services</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Latest Posts</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">FAQs</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h3 class="footer__title">Our Newsletter</h3>
-          <form action="#" class="footer__form subscribe-form">
-            <h4 class="subscribe-form__title">Join our list and get 15% off your first purchase!</h4>
-            <label class="subscribe-form__field">
-              <input type="email" required placeholder="Email Address">
-            </label>
-            <button class="subscribe-form__btn btn-reset" type="submit">Subscribe</button>
-          </form>
-          <span class="footer__text">*Don’t worry we don’t spam</span>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="footer__left">
-          <ul class="footer__list footer__list--row">
-            <li class="footer__item"><a href="#" class="footer__link footer__link--row">Returns Policy</a></li>
-            <li class="footer__item"><a href="#" class="footer__link footer__link--row">Privacy Policy</a></li>
-            <li class="footer__item"><a href="#" class="footer__link footer__link--row">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer__right">
-          <ul class="social footer__social">
-            <li class="social__item"><a href="#" class="social__link social__link--tw" aria-label="Go to twitter"></a></li>
-            <li class="social__item"><a href="#" class="social__link social__link--fb" aria-label="Go to facebook"></a></li>
-            <li class="social__item"><a href="#" class="social__link social__link--in" aria-label="Go to instagram"></a></li>
-            <li class="social__item"><a href="#" class="social__link social__link--pin" aria-label="Go to pinterest"></a></li>
-          </ul>
+          <h3 class="footer__title"><a href="tel:+7903 123 45 67"> +7903 123 45 67</a></h3>
+          <h4 class="footer__text">с 10:00 до 19:00<br> пн – пт</h4>
+          <a href="#top" class="arr">
+            <div class="footer__arrowTop">
+              <svg>
+                <use xlink:href="img/sprite.svg#topArrow"></use>
+               </svg>
+            </div>
+          </a>
         </div>
       </div>
     </div>
-  </div>
+    </div>
+    <div class="footer__mobile">
+      <div class="container footer__mobile--container">
+        <div class="footer__mobile--content">
+          <a href="" class="footer__mobile--logo " aria-label="logo">
+            <svg id="logo__mobile--footers">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+    
+          <div class="footer__mobile--services">
+            <ul class="footer__mobile--list ">
+              <li class="footer__mobile--item footer__mobile--link"><a href="../services.html">УСЛУГИ</a></li>
+              <li class="footer__mobile--item footer__mobile--link"><a href="../cases.html">КЕЙСЫ</a></li>
+              <li class="footer__mobile--item footer__mobile--link"><a href="../index.html"> О КОМПАНИИ</a></li>
+              <li class="footer__mobile--item footer__mobile--link"><a href="../contact.html">КОНТАКТЫ</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer__mobile--data">
+            <h3 class="footer__mobile--title"><a href="tel:+7903 123 45 67"> +7903 123 45 67</a></h3>
+            <h4 class="footer__mobile--text">с 10:00 до 19:00<br> пн – пт</h4>
+            <a href="#top" class="arr">
+              <div class="footer__mobile--arrowTop">
+                <svg>
+                  <use xlink:href="img/sprite.svg#topArrow"></use>
+                 </svg>
+              </div>
+            </a>
+          </div>
+    
+          <div class="footer__mobile--btn">
+            <button onclick="Chatra('openChat', true)"  type="submit" class="form__mobile--btn btn-reset">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+          </div>
+    
+          <div class="footer__mobile--top">
+            <div class="footer__mobile--column">
+              <ul class="footer__mobile--listing">
+                <li class="footer__mobile--item"> ИП Подгорных Кристина Вячеславовна</li>
+                <li class="footer__mobile--item">ИНН 911001640334</li>
+                <li class="footer__mobile--item">ОГРН ИП 321911200069323</li>
+                <li class="footer__mobile--item">Крым, г. Евпатория</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="footer__mobile--back">
+            <div class="footer__mobile--item footer__mobile--politic"><a href="../politics.html" class="footer__link">Политика Конфиденциальности</a></div>
+            <div class="footer__mobile--item footer__mobile--tm">© 2021 Digital Лапа</div>
+            </div>
+    
+            <svg class="footer__mobile--inst">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+    
+            <a href="#top" class="arr">
+              <div class="footer__arrowTop">
+                <svg>
+                  <use xlink:href="img/sprite.svg#topArrow"></use>
+                 </svg>
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
 </footer>
+
+
+
 
 		
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" integrity="sha512-kDuUo39RGApdfHkM1WQL8Pg9BYtYGS5rD14AzePsD4SEaixw7v/ykAkLMdsSjuBCNFE6/FAP+WIHh6N6QZJl5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js" integrity="sha512-hFyYiBIWCYSyo98oFGWjG5V8HEV4g5O2pxu0mzU8qIMC7lrrwtcKWoRDZcpRL0ywIIM2d/XsBJ9iXNLFf6kIgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js" integrity="sha512-7nSmgdAZ7oPdT5aa2a4YauI8Y1xgaj6zZtQo9+EIEhpcNEiRHPAtyTKYckBQ0lmg1xQKrdWweHBcN/D0tdnvCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js" integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
 	<script src="js/main.js"></script>
 </body>
 </html>

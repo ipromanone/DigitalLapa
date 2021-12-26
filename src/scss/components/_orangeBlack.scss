@@ -1,0 +1,317 @@
+.orangeBlack {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .orangeBlack {
+        position: relative;
+        display: block;
+        padding-top: 60px;
+
+        &__title {
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            text-align: center;
+        }
+
+        &__black {
+            position: absolute;
+            width: 87vw;
+            height: 900px;
+            background-color: var(--Color-black);
+            box-shadow: 0px 4px 20px rgba(57, 57, 57, 0.15);
+            border-radius: 0px 200px 200px 0px;
+        }
+
+        &__orange {
+            width: 95%;
+            height: 900px;
+            background-color: var(--TulipTree);
+            box-shadow: 0px 4px 20px rgba(57, 57, 57, 0.15);
+            border-radius: 0px 200px 200px 0px;
+        }
+
+
+        &__item {
+            width: 492px;
+            margin-top: -25px;
+            padding-top: -30px;
+            padding-bottom: 35px;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 160%;
+            color: var(--Color-white);
+        }
+
+        &__context {
+            padding-top: 100px;
+            padding-left: 60px;
+        }
+
+        &__animation {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top:100px;
+            padding-right: 80px;
+           
+            svg {
+                width: 151.29px;
+                height: 687.52px;
+            }
+        }
+
+        &__dicoration {
+            position: absolute;
+            margin-top: -640px;
+            right: 0;
+        }
+
+        &__points {
+            margin-right: -260px;
+            img {
+                height: 50vw;  
+            }
+        }
+    }
+
+
+
+
+
+
+@media (max-width: 673px) {
+    .orangeBlack {
+        &__animation {
+            padding-right: 20px;   
+        }
+
+        &__points {
+            margin-right: -260px;
+            img {
+                height: 400px;
+                
+            }
+        }
+
+        &__item {
+            width: 422px;
+            margin-top: -25px;
+            padding-top: -30px;
+            padding-bottom: 35px;
+            font-size: 25px;
+            font-weight: 300;
+            line-height: 160%;
+            color: var(--Color-white);
+        }
+
+    }
+}
+
+@media (max-width: 599px) {
+    .orangeBlack {
+        &__animation {
+            padding-right: 20px;   
+        }
+
+        &__points {
+            margin-right: -240px;
+            img {
+                height: 400px;
+                
+            }
+        }
+
+        &__item {
+            width: 392px;
+            margin-top: -25px;
+            padding-top: -30px;
+            padding-bottom: 35px;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 160%;
+            color: var(--Color-white);
+        }
+
+    }
+}
+
+@media (max-width: 567px) {
+    .orangeBlack {
+        &__animation {
+            padding-right: 20px;   
+        }
+
+        &__points {
+            margin-right: -240px;
+            img {
+                height: 400px;
+                
+            }
+        }
+
+        &__item {
+            width: 352px;
+            margin-top: -15px;
+            padding-top: -30px;
+            padding-bottom: 35px;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 160%;
+            color: var(--Color-white);
+        }
+
+    }
+}
+
+@media (max-width: 548px) {
+    .orangeBlack {
+        &__animation {
+            padding-right: 20px;   
+        }
+
+        &__points {
+            margin-right: -220px;
+            img {
+                height: 350px;
+                
+            }
+        }
+
+        &__dicoration {
+            position: absolute;
+            margin-top: -600px;
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 516px) {
+    .orangeBlack {
+        &__animation {
+            padding-right: 20px;   
+        }
+
+        &__points {
+            margin-top: 60px;
+            margin-right: -210px;
+            img {
+                height: 350px;
+                
+            }
+        }
+
+        &__item {
+            width: 280px;
+            padding-top: 60px;
+            padding-bottom: 35px;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 160%;
+            color: var(--Color-white);
+        }
+    }
+}
+
+@media (max-width: 434px) {
+    .orangeBlack {
+        &__animation {
+            padding-right: 20px;   
+        }
+
+        &__points {
+            margin-top: 60px;
+            margin-right: -210px;
+            img {
+                height: 350px;
+                
+            }
+        }
+
+        &__item {
+            width: 250px;
+            padding-top: 60px;
+            padding-bottom: 35px;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 160%;
+            color: var(--Color-white);
+        }
+    }
+}
+
+
+// @media (max-width: 420px) {
+//     .orangeBlack {
+
+//         &__points {
+//             margin-top: 60px;
+//             margin-right: -200px;
+//             img {
+//                 height: 350px;
+                
+//             }
+//         }
+
+//         &__item {
+//             width: 240px;
+//             padding-top: 60px;
+//             padding-bottom: 35px;
+//             font-size: 16px;
+//             font-weight: 300;
+//             line-height: 160%;
+//             color: var(--Color-white);
+//          }
+//         }
+//     }
+}
+
+@media (max-width: 420px) {
+    .orangeBlack {
+        &__animation {
+            padding-right: 20px;   
+        }
+
+        &__black {
+            position: absolute;
+            width: 87vw;
+            height: 596px;
+            background-color: var(--Color-black);
+            box-shadow: 0px 4px 20px rgba(57, 57, 57, 0.15);
+            border-radius: 0px 200px 200px 0px;
+        }
+
+        &__orange {
+            width: 95%;
+            height: 596px;
+            background-color: var(--TulipTree);
+            box-shadow: 0px 4px 20px rgba(57, 57, 57, 0.15);
+            border-radius: 0px 200px 200px 0px;
+        }
+
+        &__points {
+            margin-top: 180px;
+            margin-right: -170px;
+            img {
+                height: 300px;
+                
+            }
+        }
+
+        &__item {
+            width: 210px;
+            padding-top: 10px;
+            padding-bottom: 35px;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 160%;
+            color: var(--Color-white);
+        }
+
+        &__context {
+            padding-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#111111">
+	<title>Digatal Lapa</title>
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<style>
+	#chatra:not(.chatra--expanded) {
+	  visibility: hidden !important;
+	  opacity: 0 !important;
+	  pointer-events: none;
+	  transition: none;
+	}
+	</style>
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'QS6YtX7qkZByGc9Bx';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<body>
+	<div class="site-container">
+    @include('html/header.html')
+    <main class="main">
+        @include('html/four-context.html')
+		@include('html/four-statics.html')
+		@include('html/form.html')
+		
+    </main>
+		@include('html/footer.html')
+		<!-- @include('html/h1.html') пример инклуда -->
+	</div>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
